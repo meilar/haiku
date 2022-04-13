@@ -1,9 +1,11 @@
-<h1 align="center">{CHANGE ME}</h1>
+<h1 align="center">Haiku App</h1>
 
-Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](https://www.mattheweilar.com)
+Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/)    | [email](mailto:<meilar@gmail.com>) | [website](https://www.mattheweilar.com)
+Mikah Mathews | [LinkedIn](https://www.linkedin.com/in/mikah-mathews) | [email](mailto:<mikah@outofband.org>)
 
 ## About this project
-{SCREENSHOT}
+
+This is a simple web based app that takes in a user's text box and returns whether that text is a haiku.
 
 ## Get Started
 
@@ -13,10 +15,6 @@ Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mai
 - Navigate to the project directory, then install the reqired project dependencies with `$ npm init` followed by `$ npm install` 
 - To run test suites, use the command `$ npm run test` 
 - To build and view the project in your default browser, use the command `$ npm run start` to deploy a webpack development server. Please note that Google Chrome may be required to use all features. 
-
-### The Easy Way
-
-[View the hosted version of this page on Github Pages.](https://meilar.github.io/{CHANGE_ME})
 
 ## Technologies Used
 
@@ -35,18 +33,11 @@ The following development tools were used to develop this page:
 - Google Chrome
 - Git
 
-
-## Known Issues
-
-## Acknowledgements
-
-Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for {CHANGE ME}.
-
 ## License 
 
 MIT License
 
-© 2022 Matthew Eilar
+© 2022 Matthew Eilar and Mikah Mathews
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

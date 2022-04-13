@@ -1,7 +1,7 @@
 {
-  "name": "shape-test",
+  "name": "haiku-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "a webapp to check whether a block of text is a haiku",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -10,7 +10,7 @@
     "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matt Eilar & Mikah Mathews",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",

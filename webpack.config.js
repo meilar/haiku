@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new Dotenv();
+    new Dotenv(),
     new HtmlWebpackPlugin({
       title: 'Shape Tracker',
       template: './src/index.html',
