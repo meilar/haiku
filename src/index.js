@@ -8,19 +8,23 @@ $(document).ready(function() {
   $('#submitHaiku').on('click', function() {
     let inputHaiku = $('#haikuInput').val();
     const haikuResult = haikuChecker(inputHaiku);
+
+    console.log(haikuResult);
     
-    const rule1 = haikuResult[0];
-    const rule2 = haikuResult[1];
-    const rule3 = haikuResult[2];
-    const rule4 = haikuResult[3];
+    const rule1 = haikuResult.lineNumberCorrect;
+    const rule2 = haikuResult.line1Syllables;
+    const rule3 = haikuResult.line2Syllables;
+    const rule4 = haikuResult.line3Syllables;
+
+    
     
     if(rule1 && rule2 && rule3 && rule4) {
       $('#result').html("Congratulations you have written a proper Haiku.");
     } else {
-      $('#result').html(`Correct number of lines? ${rule1}`);
-      $('#result').html(`First line having 5 syllables? ${rule2}`);
-      $('#result').html(`Second line having 7 syllables? ${rule3}`);
-      $('#result').html(`Third line having 5 syllables? ${rule1}`);
+      $('#result').append(`Correct number of lines? ${rule1}\n` );
+      $('#result').append(`First line having 5 syllables? ${rule2}\n`);
+      $('#result').append(`Second line having 7 syllables? ${rule3}\n`);
+      $('#result').append(`Third line having 5 syllables? ${rule4}\n`);
     }
   });
 });

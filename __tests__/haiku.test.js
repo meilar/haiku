@@ -1,5 +1,5 @@
 import { TestScheduler } from 'jest';
-import haikuCheckerer from './../src/haiku.js';
+import haikuChecker from './../src/haiku.js';
 
 describe('haikuCheckerer', () => {
 
