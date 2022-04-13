@@ -6,7 +6,7 @@ describe('haikuCheck', () => {
   const goodHaiku = 
     `the man bit the dog
     the dog bit the mans hand off
-    the hand dogged the man`;
+    the hand dog'd the man`;
 
   const lineNumberFail = 
     `the calm cool face of the water
@@ -39,10 +39,17 @@ describe('haikuCheck', () => {
     expect(output['line3Syllables']).toEqual(false);
   });
   
-  test('given text input, should correctly identify number of syllables', () => {
+  test('given text input, should correctly identify number of lines', () => {
     let output = haikuCheck(goodHaiku);
     let expectedFail = haikuCheck(lineNumberFail);
     expect(output['lineNumberCorrect']).toEqual(true);
     expect(expectedFail['lineNumberCorrect']).toEqual(false);
+  });
+
+  test('given text input, should correctly identify number of syllables', () => {
+    let expectedPass = haikuCheck(goodHaiku);
+    expect(expectedPass['line1Syllables']).toEqual(true);
+    expect(expectedPass['line2Syllables']).toEqual(true);
+    expect(expectedPass['line3Syllables']).toEqual(true);
   });
 });
