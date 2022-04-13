@@ -1,7 +1,7 @@
 import { TestScheduler } from 'jest';
-import haikuCheck from './../src/haiku.js';
+import haikuCheckerer from './../src/haiku.js';
 
-describe('haikuCheck', () => {
+describe('haikuCheckerer', () => {
 
   const goodHaiku = 
     `the man bit the dog
@@ -31,7 +31,7 @@ describe('haikuCheck', () => {
   
 
   test('given text input, should return an object', () => {
-    let output = haikuCheck("test");
+    let output = haikuChecker("test");
     expect(typeof output).toEqual("object");
     expect(output['lineNumberCorrect']).toEqual(false);
     expect(output['line1Syllables']).toEqual(false);
@@ -40,14 +40,14 @@ describe('haikuCheck', () => {
   });
   
   test('given text input, should correctly identify number of lines', () => {
-    let output = haikuCheck(goodHaiku);
-    let expectedFail = haikuCheck(lineNumberFail);
+    let output = haikuChecker(goodHaiku);
+    let expectedFail = haikuChecker(lineNumberFail);
     expect(output['lineNumberCorrect']).toEqual(true);
     expect(expectedFail['lineNumberCorrect']).toEqual(false);
   });
 
   test('given text input, should correctly identify number of syllables', () => {
-    let expectedPass = haikuCheck(goodHaiku);
+    let expectedPass = haikuChecker(goodHaiku);
     expect(expectedPass['line1Syllables']).toEqual(true);
     expect(expectedPass['line2Syllables']).toEqual(true);
     expect(expectedPass['line3Syllables']).toEqual(true);

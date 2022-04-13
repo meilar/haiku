@@ -1,4 +1,4 @@
-export default function haikuCheck(text) {
+export default function haikuChecker(text) {
   let output = { lineNumberCorrect: false, line1Syllables: false, line2Syllables: false, line3Syllables: false};
   let splitResult = text.split(/\r?\n/);
   if(splitResult.length === 3){
